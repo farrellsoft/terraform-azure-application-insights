@@ -10,7 +10,9 @@ locals {
       instance                        = v.instance
       sku                             = v.log_analytics_sku
       retention_in_days               = v.retention_days
-      required_tags                   = {}
+      required_tags                   = {
+        "DataRetention"               = "true"
+      }
       additional_tags                 = {}
     }
   }
