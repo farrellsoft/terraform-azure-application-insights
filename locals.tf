@@ -9,7 +9,7 @@ locals {
       environment                     = v.environment
       instance                        = v.instance
       sku                             = v.log_analytics_sku
-      retention_days                  = v.retention_days
+      retention_in_days               = v.retention_days
       required_tags                   = {}
       additional_tags                 = {}
     }
